@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Ha Bier!</title>
+    <script type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+      src="jpeg_camera_with_dependencies.min.js"></script>
+    <script type="text/javascript" src="photo.js"></script>
+    <link href="photo.css" media="all" rel="stylesheet" type="text/css" >
+  </head>
+  <body>
+    <div id="camera">
+      <div class="placeholder">
+        Your browser does not support camera access.<br>
+        We recommend
+        <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>
+        &mdash; modern, secure, fast browser from Google.<br>
+        It's free.
+      </div>
+    </div><br>
+
+    <button id="take_snapshots">Take Picture</button>
+
+    <div id="snapshots"></div>
+
+    <button id="discard_snapshot">Discard snapshot</button>
+    <button id="upload_snapshot">Upload to URL</button><br>
+
+    <img src="loader.gif" id="loader" alt="loading">
+    <div id="upload_status"></div>
+    <div id="upload_result"></div>
+  </body>
+</html>
